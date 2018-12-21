@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Arm_stepper)(type KiCad)(uri /Users/gi/Arm_stepper/Arm_stepper)(options "")(descr ""))
+  (lib (name ISO1050)(type Legacy)(uri /Users/gi/Downloads/ISO1050/ISO1050.mod)(options "")(descr ""))
+)
