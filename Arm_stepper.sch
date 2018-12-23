@@ -93,7 +93,7 @@ U 1 1 5BEB05E6
 P 2050 2500
 F 0 "SW1" H 2050 2785 50  0000 C CNN
 F 1 "SW_Push_Dual" H 2050 2694 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2050 2700 50  0001 C CNN
+F 2 "Buttons_Switches_THT:SW_TH_Tactile_Omron_B3F-10xx" H 2050 2700 50  0001 C CNN
 F 3 "" H 2050 2700 50  0001 C CNN
 	1    2050 2500
 	-1   0    0    -1  
@@ -3001,17 +3001,6 @@ Wire Wire Line
 	9650 6750 9650 6850
 Connection ~ 9300 6750
 $Comp
-L Diode:1N4148 D7
-U 1 1 5C9FB3BC
-P 9550 4600
-F 0 "D7" H 9550 4816 50  0000 C CNN
-F 1 "1N4148" H 9550 4725 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123" H 9550 4425 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 9550 4600 50  0001 C CNN
-	1    9550 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C22
 U 1 1 5C9FB3C2
 P 9250 4750
@@ -3022,8 +3011,6 @@ F 3 "~" H 9250 4750 50  0001 C CNN
 	1    9250 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9250 4600 9400 4600
 $Comp
 L power:+12V #PWR039
 U 1 1 5C9FB3C9
@@ -3035,8 +3022,6 @@ F 3 "" H 10100 4500 50  0001 C CNN
 	1    10100 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9700 4600 10100 4600
 Wire Wire Line
 	10100 4600 10100 4500
 $Comp
@@ -3547,4 +3532,8 @@ $EndComp
 Wire Wire Line
 	8300 5400 8300 5350
 Connection ~ 8300 5350
+Wire Wire Line
+	9250 4600 10100 4600
+Text GLabel 5400 5600 2    50   Input ~ 0
+EN1
 $EndSCHEMATC
