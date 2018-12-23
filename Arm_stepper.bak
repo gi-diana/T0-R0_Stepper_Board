@@ -93,7 +93,7 @@ U 1 1 5BEB05E6
 P 2050 2500
 F 0 "SW1" H 2050 2785 50  0000 C CNN
 F 1 "SW_Push_Dual" H 2050 2694 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 2050 2700 50  0001 C CNN
+F 2 "Buttons_Switches_THT:SW_TH_Tactile_Omron_B3F-10xx" H 2050 2700 50  0001 C CNN
 F 3 "" H 2050 2700 50  0001 C CNN
 	1    2050 2500
 	-1   0    0    -1  
@@ -1291,19 +1291,6 @@ $EndComp
 Wire Wire Line
 	14850 8350 14850 8050
 $Comp
-L power:+5V #PWR087
-U 1 1 5C33E63A
-P 14850 7350
-F 0 "#PWR087" H 14850 7200 50  0001 C CNN
-F 1 "+5V" H 14865 7523 50  0000 C CNN
-F 2 "" H 14850 7350 50  0001 C CNN
-F 3 "" H 14850 7350 50  0001 C CNN
-	1    14850 7350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14850 7350 14850 7550
-$Comp
 L Device:R R31
 U 1 1 5C3573CB
 P 14350 8550
@@ -1634,17 +1621,6 @@ F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 13250 8600 50  00
 $EndComp
 Wire Wire Line
 	13350 8400 13350 8100
-$Comp
-L power:+5V #PWR075
-U 1 1 5C1FBCDB
-P 13350 7400
-F 0 "#PWR075" H 13350 7250 50  0001 C CNN
-F 1 "+5V" H 13365 7573 50  0000 C CNN
-F 2 "" H 13350 7400 50  0001 C CNN
-F 3 "" H 13350 7400 50  0001 C CNN
-	1    13350 7400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13350 7400 13350 7600
 $Comp
@@ -1720,7 +1696,7 @@ Text GLabel 4000 5600 0    50   Input ~ 0
 E1_1
 Text GLabel 4000 5700 0    50   Input ~ 0
 E1_2
-Text GLabel 5400 5400 2    50   Input ~ 0
+Text GLabel 4000 5800 0    50   Input ~ 0
 FAN
 Text GLabel 5400 5500 2    50   Input ~ 0
 FAN1
@@ -3536,4 +3512,26 @@ Wire Wire Line
 	9250 4600 10100 4600
 Text GLabel 5400 5600 2    50   Input ~ 0
 EN1
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5E36A7
+P 13350 7400
+F 0 "#PWR?" H 13350 7250 50  0001 C CNN
+F 1 "+12V" H 13365 7573 50  0000 C CNN
+F 2 "" H 13350 7400 50  0001 C CNN
+F 3 "" H 13350 7400 50  0001 C CNN
+	1    13350 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5E43B4
+P 14850 7550
+F 0 "#PWR?" H 14850 7400 50  0001 C CNN
+F 1 "+12V" H 14865 7723 50  0000 C CNN
+F 2 "" H 14850 7550 50  0001 C CNN
+F 3 "" H 14850 7550 50  0001 C CNN
+	1    14850 7550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
