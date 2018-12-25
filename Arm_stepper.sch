@@ -133,30 +133,8 @@ F 3 "~" H 3850 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 3100 3700 3100
-$Comp
-L Device:C C6
-U 1 1 5BEB3213
-P 2600 7150
-F 0 "C6" H 2485 7104 50  0000 R CNN
-F 1 "100nF" H 2485 7195 50  0000 R CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2638 7000 50  0001 C CNN
-F 3 "~" H 2600 7150 50  0001 C CNN
-	1    2600 7150
-	-1   0    0    1   
-$EndComp
 Text Notes 1000 6650 0    50   Italic 10
 Power Supply\nDecoupling 
-$Comp
-L power:VDDA #PWR036
-U 1 1 5BEB425B
-P 5300 2400
-F 0 "#PWR036" H 5300 2250 50  0001 C CNN
-F 1 "VDDA" H 5317 2573 50  0000 C CNN
-F 2 "" H 5300 2400 50  0001 C CNN
-F 3 "" H 5300 2400 50  0001 C CNN
-	1    5300 2400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR01
 U 1 1 5BEC1743
@@ -285,64 +263,12 @@ Wire Wire Line
 Connection ~ 4600 1650
 Wire Wire Line
 	4600 1650 4600 2500
-$Comp
-L power:GNDA #PWR032
-U 1 1 5BED7686
-P 4900 6300
-F 0 "#PWR032" H 4900 6050 50  0001 C CNN
-F 1 "GNDA" H 4905 6127 50  0000 C CNN
-F 2 "" H 4900 6300 50  0001 C CNN
-F 3 "" H 4900 6300 50  0001 C CNN
-	1    4900 6300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 6000 4900 6300
 Text Notes 3100 7550 0    50   ~ 0
 Notes:\n1. 3V3 is used as VDD and VDDA for uC. Battery should be disconnected when debugging.
-$Comp
-L power:VDDA #PWR015
-U 1 1 5BEDDEFF
-P 2600 6900
-F 0 "#PWR015" H 2600 6750 50  0001 C CNN
-F 1 "VDDA" H 2617 7073 50  0000 C CNN
-F 2 "" H 2600 6900 50  0001 C CNN
-F 3 "" H 2600 6900 50  0001 C CNN
-	1    2600 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 6900 2600 7000
-$Comp
-L power:GNDA #PWR016
-U 1 1 5BEDEEB2
-P 2600 7400
-F 0 "#PWR016" H 2600 7150 50  0001 C CNN
-F 1 "GNDA" H 2605 7227 50  0000 C CNN
-F 2 "" H 2600 7400 50  0001 C CNN
-F 3 "" H 2600 7400 50  0001 C CNN
-	1    2600 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 7300 2600 7400
 Wire Notes Line
 	3000 6650 3000 7650
-Wire Notes Line
-	650  6650 3000 6650
-Wire Notes Line
-	650  7650 3000 7650
-$Comp
-L power:GNDA #PWR013
-U 1 1 5BEE0C53
-P 2200 6200
-F 0 "#PWR013" H 2200 5950 50  0001 C CNN
-F 1 "GNDA" H 2205 6027 50  0000 C CNN
-F 2 "" H 2200 6200 50  0001 C CNN
-F 3 "" H 2200 6200 50  0001 C CNN
-	1    2200 6200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 6000 4700 6900
 Wire Wire Line
@@ -355,28 +281,6 @@ Wire Wire Line
 	4800 6000 4800 6600
 Wire Wire Line
 	4800 6600 5050 6600
-Wire Wire Line
-	1750 6200 1750 6050
-Wire Wire Line
-	2200 6050 2200 6200
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5BF244FC
-P 2000 6050
-F 0 "JP1" H 2000 5917 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 2000 5916 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 2000 6050 50  0001 C CNN
-F 3 "~" H 2000 6050 50  0001 C CNN
-	1    2000 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1750 6050 1850 6050
-Wire Wire Line
-	2200 6050 2150 6050
-Connection ~ 5000 2400
-Wire Wire Line
-	5000 2500 5000 2400
 $Comp
 L Connector:Conn_01x06_Male J4
 U 1 1 5BF50A9C
@@ -454,39 +358,11 @@ F 3 "~" H 5300 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 1650 5300 1750
-$Comp
-L Jumper:SolderJumper_2_Bridged JP3
-U 1 1 5C01EA89
-P 5150 2400
-F 0 "JP3" H 5150 2267 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" V 5195 2468 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 5150 2400 50  0001 C CNN
-F 3 "~" H 5150 2400 50  0001 C CNN
-	1    5150 2400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5000 1650 5000 1800
 Wire Wire Line
 	5300 2150 5300 2050
 Connection ~ 5000 2150
 Wire Wire Line
-	5000 2150 5000 2400
-Wire Wire Line
 	5000 2150 5300 2150
-$Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 5C022BD6
-P 5000 1950
-F 0 "JP2" V 5000 1862 50  0000 R CNN
-F 1 "SolderJumper_2_Bridged" V 5045 2018 50  0001 L CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 5000 1950 50  0001 C CNN
-F 3 "~" H 5000 1950 50  0001 C CNN
-	1    5000 1950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5000 2100 5000 2150
 Wire Wire Line
 	5000 1650 5300 1650
 Connection ~ 5000 1650
@@ -546,17 +422,6 @@ F 2 "" H 1300 5100 50  0001 C CNN
 F 3 "" H 1300 5100 50  0001 C CNN
 	1    1300 5100
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GNDS #PWR011
-U 1 1 5BFFC7A0
-P 1750 6200
-F 0 "#PWR011" H 1750 5950 50  0001 C CNN
-F 1 "GNDS" H 1755 6027 50  0000 C CNN
-F 2 "" H 1750 6200 50  0001 C CNN
-F 3 "" H 1750 6200 50  0001 C CNN
-	1    1750 6200
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDS #PWR02
@@ -1598,47 +1463,6 @@ F 3 "~" H 4250 9900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Motor:Fan M1
-U 1 1 5C1FBCCE
-P 13350 7900
-F 0 "M1" H 13192 7904 50  0000 R CNN
-F 1 "Fan" H 13192 7995 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 13350 7910 50  0001 C CNN
-F 3 "~" H 13350 7910 50  0001 C CNN
-	1    13350 7900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:2N2219 Q1
-U 1 1 5C1FBCD4
-P 13250 8600
-F 0 "Q1" H 13441 8554 50  0000 L CNN
-F 1 "2N2219" H 13441 8645 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 13450 8525 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 13250 8600 50  0001 L CNN
-	1    13250 8600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13350 8400 13350 8100
-Wire Wire Line
-	13350 7400 13350 7600
-$Comp
-L Device:R R27
-U 1 1 5C1FBCE2
-P 12850 8600
-F 0 "R27" H 12920 8646 50  0000 L CNN
-F 1 "70k" H 12920 8555 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 12780 8600 50  0001 C CNN
-F 3 "~" H 12850 8600 50  0001 C CNN
-	1    12850 8600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	13050 8600 13000 8600
-Text GLabel 12700 8600 0    50   Input ~ 0
-FAN1
-$Comp
 L Device:Thermistor_NTC TH1
 U 1 1 5C22299E
 P 12150 9300
@@ -2644,17 +2468,6 @@ i2C1_SCL
 Wire Wire Line
 	9750 1850 9750 2150
 $Comp
-L power:GNDPWR #PWR047
-U 1 1 5C2B9AD8
-P 13350 8950
-F 0 "#PWR047" H 13350 8750 50  0001 C CNN
-F 1 "GNDPWR" H 13354 8796 50  0000 C CNN
-F 2 "" H 13350 8900 50  0001 C CNN
-F 3 "" H 13350 8900 50  0001 C CNN
-	1    13350 8950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDPWR #PWR048
 U 1 1 5C2DA61D
 P 14850 8950
@@ -2665,8 +2478,6 @@ F 3 "" H 14850 8900 50  0001 C CNN
 	1    14850 8950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13350 8950 13350 8800
 $Comp
 L power:GNDS #PWR020
 U 1 1 5C379FF1
@@ -3502,17 +3313,6 @@ Wire Wire Line
 Text GLabel 5400 5600 2    50   Input ~ 0
 EN1
 $Comp
-L power:+12V #PWR0109
-U 1 1 5C5E36A7
-P 13350 7400
-F 0 "#PWR0109" H 13350 7250 50  0001 C CNN
-F 1 "+12V" H 13365 7573 50  0000 C CNN
-F 2 "" H 13350 7400 50  0001 C CNN
-F 3 "" H 13350 7400 50  0001 C CNN
-	1    13350 7400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0110
 U 1 1 5C5E43B4
 P 14850 7550
@@ -3524,14 +3324,31 @@ F 3 "" H 14850 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0111
 U 1 1 5C634527
 P 12150 8800
-F 0 "#PWR?" H 12150 8650 50  0001 C CNN
+F 0 "#PWR0111" H 12150 8650 50  0001 C CNN
 F 1 "+12V" H 12165 8973 50  0000 C CNN
 F 2 "" H 12150 8800 50  0001 C CNN
 F 3 "" H 12150 8800 50  0001 C CNN
 	1    12150 8800
+	1    0    0    -1  
+$EndComp
+Text Label 3800 2500 0    50   ~ 0
+NRST
+Wire Wire Line
+	5000 2150 5000 2500
+Wire Wire Line
+	5000 1650 5000 2150
+$Comp
+L power:GNDS #PWR0113
+U 1 1 5C3DDCE0
+P 4900 6300
+F 0 "#PWR0113" H 4900 6050 50  0001 C CNN
+F 1 "GNDS" V 4905 6172 50  0000 R CNN
+F 2 "" H 4900 6300 50  0001 C CNN
+F 3 "" H 4900 6300 50  0001 C CNN
+	1    4900 6300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
