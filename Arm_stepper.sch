@@ -5,10 +5,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "Arm Stepper Board"
+Date "2018-12-26"
 Rev ""
-Comp ""
+Comp "Team DIANA"
 Comment1 ""
 Comment2 ""
 Comment3 ""

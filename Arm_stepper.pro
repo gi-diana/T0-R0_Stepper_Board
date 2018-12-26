@@ -1,4 +1,4 @@
-update=2018 December 21, Friday 13:17:21
+update=2018 December 26, Wednesday 18:47:00
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=/Users/gi/Desktop/
+PlotDirectoryName=/Users/gi/T0-R0_Stepper_Board/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
