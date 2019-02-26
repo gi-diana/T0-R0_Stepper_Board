@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Arm_stepper-rescue)(type Legacy)(uri ${KIPRJMOD}/Arm_stepper-rescue.lib)(options "")(descr ""))
+  (lib (name ISO1050DUB)(type Legacy)(uri /home/gi/Downloads/ISO1050DUB/KiCad/ISO1050DUB.lib)(options "")(descr ""))
 )
