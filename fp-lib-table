@@ -1,6 +1,6 @@
 (fp_lib_table
   (lib (name Arm_stepper)(type KiCad)(uri /Users/gi/Arm_stepper/Arm_stepper)(options "")(descr ""))
-  (lib (name T0-R0_Stepper_Board)(type KiCad)(uri /home/gi/T0-R0_Stepper_Board)(options "")(descr ""))
   (lib (name KiCad)(type KiCad)(uri /home/gi/Downloads/ISO1050DUB/KiCad)(options "")(descr ""))
   (lib (name ISO1050DUB)(type Legacy)(uri /home/gi/Downloads/ISO1050DUB/KiCad/ISO1050DUB.mod)(options "")(descr ""))
+  (lib (name T0-R0_Stepper_Board)(type KiCad)(uri /Users/gi/T0-R0_Stepper_Board)(options "")(descr ""))
 )
