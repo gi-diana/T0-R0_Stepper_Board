@@ -1211,9 +1211,9 @@ CAN_RX
 Text GLabel 5400 5300 2    50   Input ~ 0
 CAN_TX
 Text GLabel 5400 2900 2    50   Input ~ 0
-I1
+USART_TX
 Text GLabel 5400 3000 2    50   Input ~ 0
-I2
+USART_RX
 Text GLabel 5400 3400 2    50   Input ~ 0
 t_SENS
 Text GLabel 4000 4700 0    50   Input ~ 0
@@ -3367,4 +3367,23 @@ F 3 "" H 8350 2550 50  0001 C CNN
 	1    8350 2550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	850  2300 1000 2300
+Wire Wire Line
+	850  2200 1000 2200
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 5C859CCF
+P 650 2200
+F 0 "J6" H 756 2378 50  0000 C CNN
+F 1 "SWDCONNUSART" H 756 2287 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal" H 650 2200 50  0001 C CNN
+F 3 "~" H 650 2200 50  0001 C CNN
+	1    650  2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1000 2200 2    50   Input ~ 0
+USART_TX
+Text GLabel 1000 2300 2    50   Input ~ 0
+USART_RX
 $EndSCHEMATC
