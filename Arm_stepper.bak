@@ -37,17 +37,6 @@ F 3 "~" H 3400 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
-U 1 1 5BEAEF0B
-P 3700 3950
-F 0 "R3" V 3493 3950 50  0000 C CNN
-F 1 "1k" V 3584 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 3950 50  0001 C CNN
-F 3 "~" H 3700 3950 50  0001 C CNN
-	1    3700 3950
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C9
 U 1 1 5BEAEF6F
 P 3050 3550
@@ -80,13 +69,9 @@ Wire Wire Line
 	3200 3950 3400 3950
 Connection ~ 3400 3950
 Wire Wire Line
-	3400 3950 3550 3950
-Wire Wire Line
 	3900 3550 3900 3800
 Wire Wire Line
 	3900 3800 4000 3800
-Wire Wire Line
-	3850 3950 4000 3950
 $Comp
 L Switch:SW_Push_Dual SW1
 U 1 1 5BEB05E6
@@ -2612,21 +2597,6 @@ F 3 "" H 1850 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2600 2500
-$Comp
-L power:+3.3V #PWR09
-U 1 1 5C384D52
-P 2600 2000
-F 0 "#PWR09" H 2600 1850 50  0001 C CNN
-F 1 "+3.3V" H 2615 2173 50  0000 C CNN
-F 2 "" H 2600 2000 50  0001 C CNN
-F 3 "" H 2600 2000 50  0001 C CNN
-	1    2600 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 2000 2600 2100
-Wire Wire Line
-	2600 2400 2600 2500
 Wire Wire Line
 	1850 2700 1850 2850
 Connection ~ 1850 2700
@@ -2647,17 +2617,6 @@ Wire Wire Line
 	2600 2500 3150 2500
 Wire Wire Line
 	3450 2500 4000 2500
-$Comp
-L Device:R R48
-U 1 1 5C51C7F4
-P 2600 2250
-F 0 "R48" H 2530 2204 50  0000 R CNN
-F 1 "10K" H 2530 2295 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 2250 50  0001 C CNN
-F 3 "~" H 2600 2250 50  0001 C CNN
-	1    2600 2250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10700 9200 10850 9200
 Wire Wire Line
@@ -3386,4 +3345,6 @@ Text GLabel 1000 2200 2    50   Input ~ 0
 USART_TX
 Text GLabel 1000 2300 2    50   Input ~ 0
 USART_RX
+Wire Wire Line
+	3400 3950 4000 3950
 $EndSCHEMATC
